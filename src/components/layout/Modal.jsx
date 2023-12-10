@@ -1,3 +1,4 @@
+//literally my button for add products
 import React from 'react';
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
@@ -38,14 +39,14 @@ export default function CustomModal(props) {
         setSelectedDate(date);
      };
 
-    const handleSubmit = async(event) => {
+    const handleSubmit = (event) => { //async
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
         }
-         await axios.post('http://localhost:8080/api-sysstock/equipos/', {ProfilePhoto:formFile, name: name1, categoria:categoria1, description: descripcion1, fecha:fecha1})
-         .then (()=>console.log('Guardado exitosamente')).catch((error)=>console.log(error))
+         //await axios.post('http://localhost:8080/api-sysstock/equipos/', {ProfilePhoto:formFile, name: name1, categoria:categoria1, description: descripcion1, fecha:fecha1})
+         //.then (()=>console.log('Guardado exitosamente')).catch((error)=>console.log(error))
 
         setValidated(true);
     };
