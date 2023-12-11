@@ -53,6 +53,8 @@ export default function CustomModal(props) {
                 console.log(respuesta.data)
             } catch (error) {
                 console.log(error)
+                
+
 
             }
 
@@ -135,7 +137,8 @@ export default function CustomModal(props) {
                                     <Form.Control type="text" placeholder="..." required
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
-                                    value={formik.values.description} />
+                                    value={formik.values.description} 
+                                    />
                                     <Form.Control.Feedback type="invalid">
                                         Por favor ingrese una descripción
                                     </Form.Control.Feedback>
