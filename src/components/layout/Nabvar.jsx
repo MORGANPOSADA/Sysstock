@@ -14,9 +14,9 @@ export default function  CustomNavbar(){
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Equipos</Nav.Link>
-            <Nav.Link href="/Usuarios">Usuarios</Nav.Link>
-            <Nav.Link href="#pricing">Préstamos</Nav.Link>
+            <Nav.Link href="/">Equipos</Nav.Link>
+            <Nav.Link href="/usuarios">Usuarios</Nav.Link>
+            <Nav.Link href="/prestamos">Préstamos</Nav.Link>
 
             {/* <NavDropdown title="Préstamos" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Historial de préstamos</NavDropdown.Item>
