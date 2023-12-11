@@ -3,8 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './estilos.css';
-
-
+import { Link } from 'react-router-dom';
+import Usuarios from './Usuarios';
 
 export default function  CustomNavbar(){
     return <>
@@ -15,7 +15,7 @@ export default function  CustomNavbar(){
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#features">Equipos</Nav.Link>
-            <Nav.Link href="#pricing">Usuarios</Nav.Link>
+            <Nav.Link href="/Usuarios">Usuarios</Nav.Link>
             <Nav.Link href="#pricing">Préstamos</Nav.Link>
 
             {/* <NavDropdown title="Préstamos" id="collapsible-nav-dropdown">

@@ -47,7 +47,7 @@ export default function CustomHome() {
                             </tr>
 
                         ))
-                    }    */}
+                    }     */}
                 </tbody>
             </Table>
         </>
